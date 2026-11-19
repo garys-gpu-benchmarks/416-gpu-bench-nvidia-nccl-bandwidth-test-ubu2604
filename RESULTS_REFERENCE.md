@@ -3,17 +3,17 @@
 **Main goal:** Measure NCCL collective bandwidth and latency  
 **Tools:** Compile nccl_bw.cu with nvcc and NCCL; run bin/nccl_bw <min_bytes> <warmup> <iters> <num_gpus> <collective>
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_146 · recorded 2026-11-18). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_148 · recorded 2026-11-19). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
 <!-- profile:smoke -->
 ## smoke
 
-- **System:** 1× NVIDIA H100 NVL (95830 MiB) · AMD EPYC 9374F 32-Core Processor · Ubuntu 26.04.1 LTS · kernel 6.8.0-138-generic · driver 595.112.07
-- **Run:** 2026-11-18T10:57:33Z · status **N/A-EXPECTED** (exit 0)
-- **Time (mm:ss):** setup 00:33 · benchmark 00:02 · whole run 00:41
-- **Source:** run 416_20261118_105733
+- **System:** 1× NVIDIA H100 NVL (95830 MiB) · Intel(R) Xeon(R) Platinum 8452Y · Ubuntu 26.04.1 LTS · kernel 6.8.0-138-generic · driver 595.112.07
+- **Run:** 2026-11-19T15:26:24Z · status **N/A-EXPECTED** (exit 0)
+- **Time (mm:ss):** setup 01:02 · benchmark 00:02 · whole run 01:11
+- **Source:** run 416_20261119_152624
 - **Command:** `bash run_benchmark.sh --smoke --num-gpus 1 --min-bytes 8 --max-bytes 1024 --step-factor 2 --warmup-iters 1 --num-iterations 2`
 
 | # | Metric | Result |
