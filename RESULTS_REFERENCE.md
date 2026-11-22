@@ -11,9 +11,9 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× NVIDIA H100 80GB HBM3 (81559 MiB) · Intel(R) Xeon(R) Platinum 8468 · Ubuntu 26.04.1 LTS · kernel 6.8.0-149-generic · driver 595.112.07
-- **Run:** 2026-11-22T11:16:22Z · status **N/A-EXPECTED** (exit 0)
-- **Time (mm:ss):** setup 00:54 · benchmark 00:02 · whole run 01:02
-- **Source:** run 416_20261122_111622
+- **Run:** 2026-11-22T14:44:10Z · status **N/A-EXPECTED** (exit 0)
+- **Time (mm:ss):** setup 01:06 · benchmark 00:02 · whole run 01:14
+- **Source:** run 416_20261122_144410
 - **Command:** `bash run_benchmark.sh --smoke --num-gpus 1 --min-bytes 8 --max-bytes 1024 --step-factor 2 --warmup-iters 1 --num-iterations 2`
 
 | # | Metric | Result |
